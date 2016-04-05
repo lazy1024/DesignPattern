@@ -1,17 +1,23 @@
 //
-//  Mark.h
+//  Vertex.h
 //  DesignPattern
 //
-//  Created by 李永亮 on 16/3/15.
+//  Created by 李永亮 on 16/4/5.
 //  Copyright © 2016年 李永亮. All rights reserved.
 //
 
-#ifndef Mark_h
-#define Mark_h
+#import <Foundation/Foundation.h>
 
-#import <UIKit/UIKit.h>
+#import "Mark.h"
 
-@protocol Mark <NSObject>
+@interface Vertex : NSObject <Mark, NSCopying>
+{
+    @protected
+    CGPoint _location;
+}
+
+//#pragma  mark ------------------------------------
+#pragma  mark <Mark>
 
 @property (nonatomic, retain) UIColor *color;
 @property (nonatomic, assign) CGFloat size;
@@ -19,13 +25,15 @@
 @property (nonatomic, readonly) NSInteger count;
 @property (nonatomic, readonly) id<Mark> lastChild;
 
--(id) copy;
+-(id) copyWithZone:(NSZone *)zone;
 -(void) addMark:(id<Mark>)mark;
 -(void) removeMark:(id<Mark>)mark;
 -(id<Mark>) childMarkAtIndex:(NSInteger)index;
 
 
+//#pragma  mark ------------------------------------
+#pragma  mark
+
+-(id) initWithLocation:(CGPoint) alocation;
+
 @end
-
-
-#endif /* Mark_h */
