@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Dot : NSObject
+#import "Vertex.h"
+
+@interface Dot : Vertex
+{
+    @private
+    UIColor *_color;
+    CGFloat _size;
+}
+
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic, assign) CGFloat size;
+
+-(id) copyWithZone:(NSZone *)zone;
 
 @end

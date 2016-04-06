@@ -16,7 +16,7 @@
 @property (nonatomic, retain) UIColor *color;
 @property (nonatomic, assign) CGFloat size;
 @property (nonatomic, assign) CGPoint location;
-@property (nonatomic, readonly) NSInteger count;
+@property (nonatomic, readonly) NSUInteger count;
 @property (nonatomic, readonly) id<Mark> lastChild;
 
 -(id) copy;

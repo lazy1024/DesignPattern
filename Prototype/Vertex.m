@@ -14,7 +14,7 @@
 @dynamic color, size;
 
 
-//#pragma  mark ------------------------------------
+#pragma  mark --
 #pragma  mark <Mark>
 
 -(id) copyWithZone:(NSZone *)zone
@@ -34,7 +34,8 @@
     return nil;
 }
 
-//#pragma  mark ------------------------------------
+
+#pragma  mark -
 #pragma  mark
 
 -(id) initWithLocation:(CGPoint) alocation
@@ -45,7 +46,8 @@
     return self;
 }
 
-//#pragma  mark ------------------------------------
+
+#pragma  mark -
 #pragma  mark
 -(void) setColor:(UIColor *)color
 {}
@@ -68,12 +70,12 @@
     return nil;
 }
 
--(NSInteger) count
+-(NSUInteger) count
 {
     return 0;
 }
 
-//#pragma  mark ------------------------------------
+#pragma  mark -
 #pragma  mark ??
 -(NSEnumerator *) enumerator
 {

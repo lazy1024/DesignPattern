@@ -10,4 +10,21 @@
 
 @implementation Dot
 
+
+#pragma  mark -
+#pragma  mark self
+
+@synthesize color = _color;
+@synthesize size = _size;
+
+-(id) copyWithZone:(NSZone *)zone
+{
+    Dot *dotCopy = [[[self class] allocWithZone:zone] initWithLocation: _location];
+    
+    [dotCopy setColor:[UIColor colorWithCGColor:[_color CGColor]]];
+    [dotCopy setSize:_size];
+    
+    return dotCopy;
+}
+
 @end
