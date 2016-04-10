@@ -8,7 +8,31 @@
 
 #import <UIKit/UIKit.h>
 
+// Abstract Factory ---------------------------
+//#import "BrandingFactory.h"
+
+// Factory ---------------------------
+//#import "CanvasView.h"
+//#import "CanvasViewGenerator.h"
+//#import "PaperCanvasViewGenerator.h"
+//#import "ClothCanvasViewGenerator.h"
+
+// Prototype ---------------------------
+//#import "Mark.h"
+//#import "LZPerson.h"
+
 @interface ViewController : UIViewController
+
+// Factory --------------------------------------------------------
+//{
+//    @private
+//    CanvasView *canvasView;
+//}
+//
+//@property (nonatomic, retain)CanvasView *canvasView;
+//
+//-(void) loadCanvasViewWithGenerator:(CanvasViewGenerator *)generator;
+
 
 
 @end

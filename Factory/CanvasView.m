@@ -12,10 +12,12 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
+    NSLog(@"Canvas init");
     return nil;
 }
 - (id)addSubview:(UIView *)view
 {
+    NSLog(@"Canvas add");
     return nil;
 }
 @end

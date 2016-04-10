@@ -8,24 +8,67 @@
 
 #import "ViewController.h"
 
-// ---------------------------
-#import "Mark.h"
-
-
-
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
 
+// Factory --------------------------------------------------------
+//@synthesize canvasView = _cansView;
+//
+//-(void) loadCanvasViewWithGenerator:(CanvasViewGenerator *)generator
+//{
+////    [_canvasView removeFromeSuperView];
+//    CGRect aFrame = CGRectMake(0, 0, 320, 240);
+//    CanvasView *aCanvasView = [generator canvasViewWithFrame:aFrame];
+//    [self setCanvasView:aCanvasView];
+//    [[self view] addSubview:_cansView];
+//}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    // -------
+    // Abstract Factory ---------------------------
+//    BrandingFactory *factory = [BrandingFactory factory];
+//    UIView *view = [factory brandedView];
+//    UIButton *button = [factory brandedMainButton];
+//    [factory brandedToolBar];
 
     
+    // Factory --------------------------------------------------------
+////        CanvasViewGenerator * generator = [[CanvasViewGenerator alloc] init];
+//    CanvasViewGenerator * generator = [[PaperCanvasViewGenerator alloc] init];
+//    [self loadCanvasViewWithGenerator:generator];
+
+    
+    // Prototype --------------------------------------------------------
+//#if 0
+//    NSUInteger patternIndex = 0;
+//    id<Mark> selectedMark;
+//    NSMutableArray *templateArray = [[NSMutableArray alloc] initWithCapacity:5];
+//    
+//    // -------
+//    id<Mark> patternTemplate = [selectedMark copy];
+//    id<Mark> currentMark;
+//    
+//    [templateArray addObject:patternTemplate];
+//    
+//    id<Mark> patternClone = [templateArray objectAtIndex:patternIndex];
+//    [currentMark addMark:patternClone];
+//    [canvasView setMark: currentMark];
+//    [canvasView setNeedsDisplay];
+//#endif
+//#if 0
+//    LZPerson *person1 =[[LZPerson alloc] initWithFristName:@"Li" lastName:@"yi"];
+//    LZPerson *person2 =[[LZPerson alloc] initWithFristName:@"Xiong" lastName:@"er"];
+//    [person1 addFriend:person2];
+//    
+//    LZPerson *person3 = [person1 copy];
+//    
+//#endif
 }
 
 - (void)didReceiveMemoryWarning {
