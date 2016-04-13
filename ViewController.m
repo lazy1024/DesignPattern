@@ -31,6 +31,29 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    // Singleton ---------------------------
+    Singleton *a = [[Singleton alloc] init];
+    Singleton *b = [[Singleton alloc] init];
+    Singleton *c = [Singleton sharedInstance];
+    Singleton *d = [Singleton sharedInstance];
+    
+    Singleton *e = [d copy];
+    
+    NSLog(@"a:%p", a);
+    NSLog(@"b:%p", b);
+    NSLog(@"c:%p", c);
+    NSLog(@"d:%p", d);
+    
+    NSLog(@"e:%p", e);
+    
+    
+    // Builder ---------------------------
+//    CharacterBuilder *characterBuilder = [[StandardCharacterBuilder alloc] init];
+//    ChasingGame *game = [[ChasingGame alloc] init];
+//    
+//    Character *player = [game createPlayer:characterBuilder];
+//    Character *enemy = [game createEnemy:characterBuilder];
+    
     // Abstract Factory ---------------------------
 //    BrandingFactory *factory = [BrandingFactory factory];
 //    UIView *view = [factory brandedView];

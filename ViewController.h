@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+// Singleton ---------------------------
+#import "Singleton.h"
+
+// Builder ---------------------------
+//#import "ChasingGame.h"
+
 // Abstract Factory ---------------------------
 //#import "BrandingFactory.h"
 
