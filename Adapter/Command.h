@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Command : NSObject
-{
-}
+
 
 -(void) execute;
 
 @end
+
 

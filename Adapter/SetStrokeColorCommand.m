@@ -12,22 +12,21 @@
 
 @synthesize delegate = _delegate;
 
--(id) execute
+-(void) execute
 {
-    return nil;
 }
 
 
-//#pragma  mark -
-//#pragma  mark <SetStrokeColorCommandDelegate>
-//-(void) command:(SetStrokeColorCommand *)command
-//didRequestColorComponentsForRed:(CGFloat *)red
-//          green:(CGFloat *)green
-//           blue:(CGFloat *)blue
-//{}
-//
-//-(void) command:(SetStrokeColorCommand *)command
-//didFinishColorUpdateWithColor:(UIColor *)color
-//{}
+#pragma  mark -
+#pragma  mark <SetStrokeColorCommandDelegate>
+-(void) command:(SetStrokeColorCommand *)command
+didRequestColorComponentsForRed:(CGFloat *)red
+          green:(CGFloat *)green
+           blue:(CGFloat *)blue
+{}
+
+-(void) command:(SetStrokeColorCommand *)command
+didFinishColorUpdateWithColor:(UIColor *)color
+{}
 
 @end

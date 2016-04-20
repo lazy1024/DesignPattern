@@ -27,11 +27,11 @@
 @interface SetStrokeColorCommand : Command
 {
     @private
-    id<SetStrokeColorCommandDelegate> _delegate;
+    id<SetStrokeColorCommandDelegate> delegate;
 }
 
 @property (nonatomic, assign) id<SetStrokeColorCommandDelegate> delegate;
 
--(id) execute;
+-(void) execute;
 
 @end

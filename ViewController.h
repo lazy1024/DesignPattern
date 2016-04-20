@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 // Singleton ---------------------------
-#import "Singleton.h"
+//#import "Singleton.h"
 
 // Builder ---------------------------
 //#import "ChasingGame.h"
