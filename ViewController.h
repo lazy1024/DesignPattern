@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+// Adapter ---------------------------
+#import "SetStrokeColorCommand.h"
+
 // Singleton ---------------------------
 //#import "Singleton.h"
 

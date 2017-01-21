@@ -28,9 +28,13 @@
 {
     @private
     id<SetStrokeColorCommandDelegate> delegate;
+    
+    int a;
 }
 
 @property (nonatomic, assign) id<SetStrokeColorCommandDelegate> delegate;
+
+@property (nonatomic, assign) int b;
 
 -(void) execute;
 

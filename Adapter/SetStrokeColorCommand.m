@@ -14,6 +14,18 @@
 
 -(void) execute
 {
+    NSLog(@":%p", &delegate);
+    NSLog(@"_:%p", &_delegate);
+    
+    NSLog(@"Self.delegate:%p", self.delegate);
+    NSLog(@"_:%p", delegate);
+    
+    a = 1;
+    _b = 2;
+    
+    NSLog(@"a = %d", a);
+    NSLog(@"b = %d", _b);
+    NSLog(@"b = %d", self.b);
 }
 
 
