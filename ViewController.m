@@ -32,9 +32,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
+    
     // Adapter ---------------------------
-    SetStrokeColorCommand *stroke = [[SetStrokeColorCommand alloc] init];
-    [stroke execute];
+    //SetStrokeColorCommand *stroke = [[SetStrokeColorCommand alloc] init];
+    //[stroke execute];
     
     // Singleton ---------------------------
 //    Singleton *a = [[Singleton alloc] init];
