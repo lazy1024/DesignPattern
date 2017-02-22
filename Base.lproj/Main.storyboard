@@ -29,6 +29,11 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="8pN-Jr-5eU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAK-DG-Po4">
+                                <rect key="frame" x="164" y="43" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.34959698922767923" green="0.64514415261773161" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
