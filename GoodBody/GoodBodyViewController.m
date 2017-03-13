@@ -19,8 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.MainBtn.layer.cornerRadius = self.MainBtn.frame.size.width / 2.0;
-    self.MainBtn.clipsToBounds = TRUE;
+   // self.MainBtn.layer.cornerRadius = self.MainBtn.frame.size.width / 2.0;
+    //self.MainBtn.clipsToBounds = TRUE;
 
 }
 

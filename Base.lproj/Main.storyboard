@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -43,7 +43,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w1i-Kd-uQh" id="qTa-eX-YTy">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2DJ-dY-QaE">
@@ -64,7 +64,7 @@
                                         <rect key="frame" x="0.0" y="128" width="343" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KEf-PF-ShH" id="506-5d-FGq">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="doX-HI-QeI">
@@ -85,7 +85,7 @@
                                         <rect key="frame" x="0.0" y="228" width="343" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X3u-Kb-73y" id="5Gk-ex-Fe7">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -93,7 +93,7 @@
                                         <rect key="frame" x="0.0" y="328" width="343" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JIZ-3r-IbE" id="VQq-DD-d6A">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -178,12 +178,10 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="nqG-3r-jc2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wna-Gf-aAy">
-                                <rect key="frame" x="18" y="163" width="340" height="340"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wna-Gf-aAy" customClass="OBShapedButton">
+                                <rect key="frame" x="0.0" y="163" width="377" height="340"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.84290624622107124" green="0.97927838563919067" blue="0.15754335325517851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                                <state key="normal" title="开始"/>
+                                <state key="normal" image="Circle.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -199,6 +197,7 @@
     </scenes>
     <resources>
         <image name="AppIcon.png" width="120" height="120"/>
+        <image name="Circle.png" width="340" height="340"/>
         <image name="HomeImage.png" width="750" height="1334"/>
         <image name="clock.png" width="300" height="300"/>
     </resources>
