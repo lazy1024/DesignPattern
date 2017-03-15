@@ -109,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MrG-1U-2LI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="-591"/>
+            <point key="canvasLocation" x="882" y="-537"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -148,6 +148,16 @@
                                     <segue destination="VLm-iT-T4q" kind="show" id="yhZ-Ef-7FS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jq7-Ro-Tq2">
+                                <rect key="frame" x="57" y="283" width="109" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.079442527413779551" blue="0.041659053113115574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Fire"/>
+                                <connections>
+                                    <segue destination="2JR-iW-2xL" kind="show" id="OUe-6J-tgT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -168,8 +178,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wna-Gf-aAy" customClass="OBShapedButton">
+                                <rect key="frame" x="0.0" y="163" width="377" height="340"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Circle.png"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kq-Ez-PgJ">
-                                <rect key="frame" x="53" y="28" width="136" height="55"/>
+                                <rect key="frame" x="120" y="20" width="136" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.72703898749999996" blue="0.1628608158" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
@@ -177,11 +192,6 @@
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="nqG-3r-jc2"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wna-Gf-aAy" customClass="OBShapedButton">
-                                <rect key="frame" x="0.0" y="163" width="377" height="340"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Circle.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,14 +204,123 @@
             </objects>
             <point key="canvasLocation" x="882.39999999999998" y="133.5832083958021"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="RrR-HM-DVi">
+            <objects>
+                <viewController id="2JR-iW-2xL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C50-Pa-3se"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZxR-lB-rSw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jOX-E1-YYq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CannonBoard.png" translatesAutoresizingMaskIntoConstraints="NO" id="KWn-eh-NSH" userLabel="Board">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvI-nG-EwG">
+                                <rect key="frame" x="119" y="44" width="136" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.72703898749999996" blue="0.1628608158" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="g6D-7c-U5W"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="mFc-gc-Jnb">
+                                <rect key="frame" x="16" y="213" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="rEC-86-wH2">
+                                <rect key="frame" x="87" y="213" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="ynO-z6-2vR">
+                                <rect key="frame" x="167" y="213" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Oy-83-2xg">
+                                <rect key="frame" x="241" y="213" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="Iin-ZP-mwm">
+                                <rect key="frame" x="16" y="285" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="m47-h3-Scj">
+                                <rect key="frame" x="87" y="285" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="R1b-ZN-CwK">
+                                <rect key="frame" x="167" y="285" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="SYD-NS-xUL">
+                                <rect key="frame" x="241" y="285" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="umh-rG-dMt">
+                                <rect key="frame" x="308" y="285" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="MHA-zz-DIk">
+                                <rect key="frame" x="16" y="358" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="PC4-57-Osj">
+                                <rect key="frame" x="87" y="358" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="KQC-1t-vQY">
+                                <rect key="frame" x="167" y="358" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="9c8-52-eag">
+                                <rect key="frame" x="241" y="358" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="P92-Zi-w4q">
+                                <rect key="frame" x="308" y="358" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cannon.png" translatesAutoresizingMaskIntoConstraints="NO" id="W6I-wl-iRB" userLabel="Image View Cannon1">
+                                <rect key="frame" x="16" y="508" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cannon.png" translatesAutoresizingMaskIntoConstraints="NO" id="HVa-Qv-F7y" userLabel="Image View Cannon2">
+                                <rect key="frame" x="167" y="508" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cannon.png" translatesAutoresizingMaskIntoConstraints="NO" id="pkc-xs-nCL" userLabel="Image View Cannon3">
+                                <rect key="frame" x="308" y="508" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footman.png" translatesAutoresizingMaskIntoConstraints="NO" id="elb-hJ-pqp">
+                                <rect key="frame" x="308" y="213" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hw3-Bk-uSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880.79999999999995" y="832.53373313343332"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AppIcon.png" width="120" height="120"/>
+        <image name="CannonBoard.png" width="375" height="667"/>
         <image name="Circle.png" width="340" height="340"/>
         <image name="HomeImage.png" width="750" height="1334"/>
+        <image name="cannon.png" width="40" height="40"/>
         <image name="clock.png" width="300" height="300"/>
+        <image name="footman.png" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nqG-3r-jc2"/>
+        <segue reference="g6D-7c-U5W"/>
     </inferredMetricsTieBreakers>
 </document>
