@@ -10,4 +10,13 @@
 #define Cannon_h
 
 
+@interface Cannon : NSObject
+
+- (void)PositionInit;
+- (void)GameInit;
+
+@end
+
+
+
 #endif /* Cannon_h */

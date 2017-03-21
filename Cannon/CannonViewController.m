@@ -7,6 +7,8 @@
 //
 
 #import "CannonViewController.h"
+#import "Cannon.h"
+
 
 @interface CannonViewController ()
 
@@ -14,9 +16,20 @@
 
 @implementation CannonViewController
 
+Cannon *cannon;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSLog(@"Short: %lu", sizeof(short));
+    NSLog(@"Short: %lu", sizeof(int));
+    
+    cannon = [[Cannon alloc] init];
+}
+- (IBAction)Test1:(id)sender {
+    [cannon PositionInit];
+    
 }
 
 - (void)didReceiveMemoryWarning {

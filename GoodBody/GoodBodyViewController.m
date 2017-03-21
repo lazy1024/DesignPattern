@@ -21,7 +21,7 @@
     
    // self.MainBtn.layer.cornerRadius = self.MainBtn.frame.size.width / 2.0;
     //self.MainBtn.clipsToBounds = TRUE;
-
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -204,10 +204,10 @@
             </objects>
             <point key="canvasLocation" x="882.39999999999998" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Cannon View Controller-->
         <scene sceneID="RrR-HM-DVi">
             <objects>
-                <viewController id="2JR-iW-2xL" sceneMemberID="viewController">
+                <viewController id="2JR-iW-2xL" customClass="CannonViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C50-Pa-3se"/>
                         <viewControllerLayoutGuide type="bottom" id="ZxR-lB-rSw"/>
@@ -302,6 +302,23 @@
                                 <rect key="frame" x="308" y="213" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4h-Vk-wyI" userLabel="测试2">
+                                <rect key="frame" x="212" y="125" width="136" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.72703898749999996" blue="0.1628608158" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="测试2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVZ-hz-jlJ" userLabel="测试1">
+                                <rect key="frame" x="39" y="125" width="136" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.72703898749999996" blue="0.1628608158" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="测试1"/>
+                                <connections>
+                                    <action selector="Test1:" destination="2JR-iW-2xL" eventType="touchUpInside" id="vmV-Xf-XUf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

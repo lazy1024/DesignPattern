@@ -31,7 +31,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
+    NSLog(@"Short: %lu", sizeof(short));
+    NSLog(@"Short: %lu", sizeof(int));
     
     // Adapter ---------------------------
     //SetStrokeColorCommand *stroke = [[SetStrokeColorCommand alloc] init];
