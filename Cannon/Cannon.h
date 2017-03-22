@@ -9,8 +9,28 @@
 #ifndef Cannon_h
 #define Cannon_h
 
+#define GameRow   5
+#define GameLine  5
+
+#define CannonValue     2
+#define FootmanValue    1
+#define SpaceValue       0
+
+#define FirstPointX        16
+#define FirstPointY         212
+
+#define Distance            70
+
+#define FootmanMaxNum       15
+#define CannonMaxNum        3
+
 
 @interface Cannon : NSObject
+{
+    @public
+    BYTE Game[GameRow][GameLine];
+    Point Position[GameRow][GameLine];
+}
 
 - (void)PositionInit;
 - (void)GameInit;

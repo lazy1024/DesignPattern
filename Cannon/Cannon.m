@@ -8,30 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
-#define GameRow   5
-#define GameLine  5
+#import "Cannon.h"
 
-#define CannonValue     2
-#define FootmanValue    1
-#define SpaceValue       0
-
-#define FirstPointX        16
-#define FirstPointY         212
-
-#define Distance            70
-
-BYTE Game[GameRow][GameLine] = {0};
-Point Position[GameRow][GameLine] =
-{
-    0
-};
-
-@interface Cannon : NSObject
-
-@end
 
 
 @implementation Cannon : NSObject
+
+- (void)Init
+{
+    BYTE row = 0;
+    BYTE line = 0;
+    
+    // Space ---
+    for(row=0; row<GameRow; row++)
+    {
+        for(line=0; line<GameLine; line++)
+            Game[row][line] = SpaceValue;
+    }
+}
 
 - (void)PositionInit
 {
