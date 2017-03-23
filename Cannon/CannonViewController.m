@@ -22,9 +22,6 @@ Cannon *cannon;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSLog(@"Short: %lu", sizeof(short));
-    NSLog(@"Short: %lu", sizeof(int));
-    
     cannon = [[Cannon alloc] init];
 }
 
@@ -72,7 +69,6 @@ Cannon *cannon;
     for(i=0; i<CannonMaxNum; i++)
         Cannon[i].hidden = YES;
     
-#if 0
     for(i=0; i<GameRow; i++)
     {
         for(j=0; j<GameLine; j++)
@@ -82,8 +78,10 @@ Cannon *cannon;
                positionX = cannon->Position[i][j].h;
                positionY = cannon->Position[i][j].v;
                
-               Footman[footmanIndex].frame = CGRectMake(positionX, positionY, sizeX, sizeY);
+               Footman[footmanIndex].frame = CGRectMake(positionY, positionX, sizeX, sizeY);
                Footman[footmanIndex++].hidden = NO;
+               
+               
            }
             
             if(cannon->Game[i][j] == CannonValue)
@@ -91,24 +89,19 @@ Cannon *cannon;
                 positionX = cannon->Position[i][j].h;
                 positionY = cannon->Position[i][j].v;
                 
-                Cannon[cannonIndex].frame = CGRectMake(positionX, positionY, sizeX, sizeY);
+                
+                Cannon[cannonIndex].frame = CGRectMake(positionY, positionX, sizeX, sizeY);
                 Cannon[cannonIndex++].hidden = NO;
             }
         }
     }
-#endif
 }
 
 - (IBAction)Test1:(id)sender {
   
-    
-    [cannon PositionInit];
-    
- 
-    
 }
 - (IBAction)Test2:(id)sender {
-    [self Update];
+     [self Update];
 }
 
 - (void)didReceiveMemoryWarning {

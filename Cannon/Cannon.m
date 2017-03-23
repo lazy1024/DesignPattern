@@ -14,17 +14,26 @@
 
 @implementation Cannon : NSObject
 
-- (void)Init
+- (id)init
 {
-    BYTE row = 0;
-    BYTE line = 0;
-    
-    // Space ---
-    for(row=0; row<GameRow; row++)
+    self = [super init];
+    if(self)
     {
-        for(line=0; line<GameLine; line++)
-            Game[row][line] = SpaceValue;
+        BYTE row = 0;
+        BYTE line = 0;
+        
+        // Space ---
+        for(row=0; row<GameRow; row++)
+        {
+            for(line=0; line<GameLine; line++)
+                Game[row][line] = SpaceValue;
+        }
+        
+        [self GameInit];
+        [self PositionInit];
     }
+    
+    return self;
 }
 
 - (void)PositionInit
@@ -36,17 +45,19 @@
         for(j=0; j<GameLine; j++)
         {
             Position[i][j].h = FirstPointX + i*Distance;
-            Position[i][j].v = FirstPointY + i*Distance;
+            Position[i][j].v = FirstPointY + j*Distance;
         }
     }
     
-    NSLog(@"PositionInit");
+    //NSLog(@"PositionInit");
 }
 
 - (void)GameInit
 {
     BYTE row = 0;
     BYTE line = 0;
+    
+    NSLog(@"Game Init");
     
     // Space ---
     for(row=0; row<GameRow; row++)
