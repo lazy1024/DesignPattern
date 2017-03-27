@@ -23,9 +23,13 @@ Cannon *cannon;
     // Do any additional setup after loading the view.
     
     cannon = [[Cannon alloc] init];
+    
+    [self Update];
 }
 
 - (void)Update{
+    
+#if 0
     BYTE i = 0;
     BYTE j = 0;
     BYTE footmanIndex = 0;
@@ -95,13 +99,23 @@ Cannon *cannon;
             }
         }
     }
+#endif
 }
 
 - (IBAction)Test1:(id)sender {
-  
 }
+
 - (IBAction)Test2:(id)sender {
-     [self Update];
+     //[self Update];
+    /*
+    [_Cannon1Btn setImage:[UIImage imageNamed:@"footman.png"] forState:UIControlStateNormal];
+    [_Cannon2Btn setImage:[UIImage imageNamed:@"footman.png"] forState:UIControlStateNormal];
+    [_Cannon3Btn setImage:[UIImage imageNamed:@"footman.png"] forState:UIControlStateNormal];
+     */
+}
+- (IBAction)button1:(id)sender {
+    NSLog(@"button1");
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,23 +9,31 @@
 #import <UIKit/UIKit.h>
 
 @interface CannonViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *Footman1Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman2Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman3Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman4Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman5Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman6Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman7Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman8Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman9Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman10Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman11Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman12Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman13Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman14Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Footman15Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Cannon1Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Cannon2Btn;
-@property (weak, nonatomic) IBOutlet UIButton *Cannon3Btn;
+@property (weak, nonatomic) IBOutlet UIButton *Btn1;
+@property (weak, nonatomic) IBOutlet UIButton *Btn2;
+@property (weak, nonatomic) IBOutlet UIButton *Btn3;
+@property (weak, nonatomic) IBOutlet UIButton *Btn4;
+@property (weak, nonatomic) IBOutlet UIButton *Btn5;
+@property (weak, nonatomic) IBOutlet UIButton *Btn6;
+@property (weak, nonatomic) IBOutlet UIButton *Btn7;
+@property (weak, nonatomic) IBOutlet UIButton *Btn8;
+@property (weak, nonatomic) IBOutlet UIButton *Btn9;
+@property (weak, nonatomic) IBOutlet UIButton *Btn10;
+@property (weak, nonatomic) IBOutlet UIButton *Btn11;
+@property (weak, nonatomic) IBOutlet UIButton *Btn12;
+@property (weak, nonatomic) IBOutlet UIButton *Btn13;
+@property (weak, nonatomic) IBOutlet UIButton *Btn14;
+@property (weak, nonatomic) IBOutlet UIButton *Btn15;
+@property (weak, nonatomic) IBOutlet UIButton *Btn16;
+@property (weak, nonatomic) IBOutlet UIButton *Btn17;
+@property (weak, nonatomic) IBOutlet UIButton *Btn18;
+@property (weak, nonatomic) IBOutlet UIButton *Btn19;
+@property (weak, nonatomic) IBOutlet UIButton *Btn20;
+@property (weak, nonatomic) IBOutlet UIButton *Btn21;
+@property (weak, nonatomic) IBOutlet UIButton *Btn22;
+@property (weak, nonatomic) IBOutlet UIButton *Btn23;
+@property (weak, nonatomic) IBOutlet UIButton *Btn24;
+@property (weak, nonatomic) IBOutlet UIButton *Btn25;
+
 
 @end

@@ -30,26 +30,9 @@
         }
         
         [self GameInit];
-        [self PositionInit];
     }
     
     return self;
-}
-
-- (void)PositionInit
-{
-    BYTE i = 0;
-    BYTE j = 0;
-    for(i=0; i<GameRow; i++)
-    {
-        for(j=0; j<GameLine; j++)
-        {
-            Position[i][j].h = FirstPointX + i*Distance;
-            Position[i][j].v = FirstPointY + j*Distance;
-        }
-    }
-    
-    //NSLog(@"PositionInit");
 }
 
 - (void)GameInit

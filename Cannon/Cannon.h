@@ -16,11 +16,6 @@
 #define FootmanValue    1
 #define SpaceValue       0
 
-#define FirstPointX        212 //16
-#define FirstPointY         16 //212
-
-#define Distance            70
-
 #define FootmanMaxNum       15
 #define CannonMaxNum        3
 
@@ -29,10 +24,8 @@
 {
     @public
     BYTE Game[GameRow][GameLine];
-    Point Position[GameRow][GameLine];
 }
 
-- (void)PositionInit;
 - (void)GameInit;
 
 @end
