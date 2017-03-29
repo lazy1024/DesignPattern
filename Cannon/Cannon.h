@@ -12,9 +12,12 @@
 #define GameRow   5
 #define GameLine  5
 
+#define GameTotal 25
+
+
+#define NobodyValue       0
 #define CannonValue     2
 #define FootmanValue    1
-#define SpaceValue       0
 
 #define FootmanMaxNum       15
 #define CannonMaxNum        3
@@ -27,6 +30,7 @@
 }
 
 - (void)GameInit;
+- (void)GameTouchRow:(BYTE)row Line:(BYTE)line;
 
 @end
 

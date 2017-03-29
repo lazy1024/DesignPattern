@@ -26,7 +26,7 @@
         for(row=0; row<GameRow; row++)
         {
             for(line=0; line<GameLine; line++)
-                Game[row][line] = SpaceValue;
+                Game[row][line] = NobodyValue;
         }
         
         [self GameInit];
@@ -42,11 +42,11 @@
     
     NSLog(@"Game Init");
     
-    // Space ---
+    // Nobody ---
     for(row=0; row<GameRow; row++)
     {
         for(line=0; line<GameLine; line++)
-            Game[row][line] = SpaceValue;
+            Game[row][line] = NobodyValue;
     }
     
     // FootMan ---
@@ -60,6 +60,29 @@
     Game[GameRow-1][0] = CannonValue;
     Game[GameRow-1][1] = CannonValue;
     Game[GameRow-1][2] = CannonValue;
+}
+
+- (void)GameTouchRow:(BYTE)row Line:(BYTE)line
+{
+    // Touch---
+    static BYTE preRow = 0;
+    static BYTE preLine = 0;
+    
+    if(Game[preRow][preLine] == FootmanValue)
+    {
+        Game[row][line] = FootmanValue;
+        Game[preRow][preLine] = NobodyValue;
+    }
+    else if(Game[preRow][preLine] == CannonValue)
+    {
+        Game[row][line] = CannonValue;
+        Game[preRow][preLine] = NobodyValue;
+    }
+    
+    
+    // ---
+    preRow = row;
+    preLine = line;
 }
 
 @end

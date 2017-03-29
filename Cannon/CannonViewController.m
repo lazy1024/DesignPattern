@@ -12,6 +12,7 @@
 
 @interface CannonViewController ()
 
+
 @end
 
 @implementation CannonViewController
@@ -28,94 +29,162 @@ Cannon *cannon;
 }
 
 - (void)Update{
-    
-#if 0
     BYTE i = 0;
     BYTE j = 0;
-    BYTE footmanIndex = 0;
-    BYTE cannonIndex = 0;
-    
-    CGFloat positionX = 0;
-    CGFloat positionY = 0;
-    CGFloat sizeX = _Footman1Btn.frame.size.width;
-    CGFloat sizeY = _Footman1Btn.frame.size.height;
-    
-    
-    const UIButton *Footman[FootmanMaxNum] =
+    const UIButton *AllBtn[GameRow][GameLine] =
     {
-        _Footman1Btn,
-        _Footman2Btn,
-        _Footman3Btn,
-        _Footman4Btn,
-        _Footman5Btn,
-        _Footman6Btn,
-        _Footman7Btn,
-        _Footman8Btn,
-        _Footman9Btn,
-        _Footman10Btn,
-        _Footman11Btn,
-        _Footman12Btn,
-        _Footman13Btn,
-        _Footman14Btn,
-        _Footman15Btn,
+        {_Btn1,  _Btn2,  _Btn3,  _Btn4,  _Btn5},
+        {_Btn6,  _Btn7,  _Btn8,  _Btn9,  _Btn10},
+        {_Btn11, _Btn12, _Btn13, _Btn14, _Btn15},
+        {_Btn16, _Btn17, _Btn18, _Btn19, _Btn20},
+        {_Btn21, _Btn22, _Btn23, _Btn24, _Btn25},
     };
-    
-    const UIButton *Cannon[CannonMaxNum] =
-    {
-        _Cannon1Btn,
-        _Cannon2Btn,
-        _Cannon3Btn,
-    };
-    
-    for(i=0; i<FootmanMaxNum; i++)
-        Footman[i].hidden = YES;
-    
-    for(i=0; i<CannonMaxNum; i++)
-        Cannon[i].hidden = YES;
     
     for(i=0; i<GameRow; i++)
     {
         for(j=0; j<GameLine; j++)
         {
-           if(cannon->Game[i][j] == FootmanValue)
-           {
-               positionX = cannon->Position[i][j].h;
-               positionY = cannon->Position[i][j].v;
-               
-               Footman[footmanIndex].frame = CGRectMake(positionY, positionX, sizeX, sizeY);
-               Footman[footmanIndex++].hidden = NO;
-               
-               
-           }
-            
-            if(cannon->Game[i][j] == CannonValue)
-            {
-                positionX = cannon->Position[i][j].h;
-                positionY = cannon->Position[i][j].v;
+            if(cannon->Game[i][j] == FootmanValue)
+                [AllBtn[i][j] setImage:[UIImage imageNamed:@"footman.png"] forState:UIControlStateNormal];
+            else if(cannon->Game[i][j] == CannonValue)
+                [AllBtn[i][j] setImage:[UIImage imageNamed:@"cannon.png"] forState:UIControlStateNormal];
+            else
+                [AllBtn[i][j] setImage:[UIImage imageNamed:@"nobody.png"] forState:UIControlStateNormal];
                 
-                
-                Cannon[cannonIndex].frame = CGRectMake(positionY, positionX, sizeX, sizeY);
-                Cannon[cannonIndex++].hidden = NO;
-            }
         }
     }
-#endif
 }
 
 - (IBAction)Test1:(id)sender {
 }
 
 - (IBAction)Test2:(id)sender {
-     //[self Update];
-    /*
-    [_Cannon1Btn setImage:[UIImage imageNamed:@"footman.png"] forState:UIControlStateNormal];
-    [_Cannon2Btn setImage:[UIImage imageNamed:@"footman.png"] forState:UIControlStateNormal];
-    [_Cannon3Btn setImage:[UIImage imageNamed:@"footman.png"] forState:UIControlStateNormal];
-     */
+
 }
+
 - (IBAction)button1:(id)sender {
-    NSLog(@"button1");
-    
+    [cannon GameTouchRow:0 Line:0];
+    [self Update];
+}
+
+- (IBAction)button2:(id)sender{
+    [cannon GameTouchRow:0 Line:1];
+    [self Update];
+}
+
+- (IBAction)button3:(id)sender{
+    [cannon GameTouchRow:0 Line:2];
+    [self Update];
+}
+
+- (IBAction)button4:(id)sender{
+    [cannon GameTouchRow:0 Line:3];
+    [self Update];
+}
+
+- (IBAction)button5:(id)sender{
+    [cannon GameTouchRow:0 Line:4];
+    [self Update];
+}
+
+- (IBAction)button6:(id)sender{
+    [cannon GameTouchRow:1 Line:0];
+    [self Update];
+}
+
+- (IBAction)button7:(id)sender{
+    [cannon GameTouchRow:1 Line:1];
+    [self Update];
+}
+
+- (IBAction)button8:(id)sender{
+    [cannon GameTouchRow:1 Line:2];
+    [self Update];
+}
+
+- (IBAction)button9:(id)sender{
+    [cannon GameTouchRow:1 Line:3];
+    [self Update];
+}
+
+- (IBAction)button10:(id)sender{
+    [cannon GameTouchRow:1 Line:4];
+    [self Update];
+}
+
+- (IBAction)button11:(id)sender{
+    [cannon GameTouchRow:2 Line:0];
+    [self Update];
+}
+
+- (IBAction)button12:(id)sender{
+    [cannon GameTouchRow:2 Line:1];
+    [self Update];
+}
+
+- (IBAction)button13:(id)sender{
+    [cannon GameTouchRow:2 Line:2];
+    [self Update];
+}
+
+- (IBAction)button14:(id)sender{
+    [cannon GameTouchRow:2 Line:3];
+    [self Update];
+}
+
+- (IBAction)button15:(id)sender{
+    [cannon GameTouchRow:2 Line:4];
+    [self Update];
+}
+
+- (IBAction)button16:(id)sender{
+    [cannon GameTouchRow:3 Line:0];
+    [self Update];
+}
+
+- (IBAction)button17:(id)sender{
+    [cannon GameTouchRow:3 Line:1];
+    [self Update];
+}
+
+- (IBAction)button18:(id)sender{
+    [cannon GameTouchRow:3 Line:2];
+    [self Update];
+}
+
+- (IBAction)button19:(id)sender{
+    [cannon GameTouchRow:3 Line:3];
+    [self Update];
+}
+
+- (IBAction)button20:(id)sender{
+    [cannon GameTouchRow:3 Line:4];
+    [self Update];
+}
+
+- (IBAction)button21:(id)sender{
+    [cannon GameTouchRow:4 Line:0];
+    [self Update];
+}
+
+- (IBAction)button22:(id)sender{
+    [cannon GameTouchRow:4 Line:1];
+    [self Update];
+}
+
+- (IBAction)button23:(id)sender{
+    [cannon GameTouchRow:4 Line:2];
+    [self Update];
+}
+
+- (IBAction)button24:(id)sender{
+    [cannon GameTouchRow:4 Line:3];
+    [self Update];
+}
+
+- (IBAction)button25:(id)sender{
+    [cannon GameTouchRow:4 Line:4];
+    [self Update];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -43,7 +43,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w1i-Kd-uQh" id="qTa-eX-YTy">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2DJ-dY-QaE">
@@ -64,7 +64,7 @@
                                         <rect key="frame" x="0.0" y="128" width="343" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KEf-PF-ShH" id="506-5d-FGq">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="doX-HI-QeI">
@@ -85,7 +85,7 @@
                                         <rect key="frame" x="0.0" y="228" width="343" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X3u-Kb-73y" id="5Gk-ex-Fe7">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -93,7 +93,7 @@
                                         <rect key="frame" x="0.0" y="328" width="343" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JIZ-3r-IbE" id="VQq-DD-d6A">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -266,6 +266,9 @@
                                 <state key="normal" image="footman.png">
                                     <color key="titleColor" red="1" green="0.079442527410000005" blue="0.041659053109999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="button2:" destination="2JR-iW-2xL" eventType="touchUpInside" id="gza-uk-4Sr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eG6-vs-cMu" userLabel="Btn3">
                                 <rect key="frame" x="165" y="218" width="40" height="40"/>
@@ -273,116 +276,185 @@
                                 <state key="normal" image="footman.png">
                                     <color key="titleColor" red="1" green="0.079442527410000005" blue="0.041659053109999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="button3:" destination="2JR-iW-2xL" eventType="touchUpInside" id="bdA-cO-WLm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL9-AP-2M6" userLabel="Btn4">
                                 <rect key="frame" x="239" y="218" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button4:" destination="2JR-iW-2xL" eventType="touchUpInside" id="fGe-OP-0wi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfm-4b-qsC" userLabel="Btn5">
                                 <rect key="frame" x="312" y="218" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button5:" destination="2JR-iW-2xL" eventType="touchUpInside" id="kXj-pQ-4Bv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csn-5m-t8v" userLabel="Btn6">
                                 <rect key="frame" x="18" y="287" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button6:" destination="2JR-iW-2xL" eventType="touchUpInside" id="bTy-Gd-RMH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IA1-Xy-QMt" userLabel="Btn7">
                                 <rect key="frame" x="83" y="287" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button7:" destination="2JR-iW-2xL" eventType="touchUpInside" id="ZdL-Fv-w1d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bF-2c-2Es" userLabel="Btn8">
                                 <rect key="frame" x="165" y="287" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button8:" destination="2JR-iW-2xL" eventType="touchUpInside" id="kpc-VG-A7G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXh-JJ-DWT" userLabel="Btn9">
                                 <rect key="frame" x="239" y="287" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button9:" destination="2JR-iW-2xL" eventType="touchUpInside" id="RO4-7w-dP5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHP-2U-kgV" userLabel="Btn10">
                                 <rect key="frame" x="312" y="287" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button10:" destination="2JR-iW-2xL" eventType="touchUpInside" id="Qmw-fg-kbB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mX-Nl-aRe" userLabel="Btn11">
                                 <rect key="frame" x="18" y="360" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button11:" destination="2JR-iW-2xL" eventType="touchUpInside" id="HGJ-yv-Fxc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO9-FD-se0" userLabel="Btn12">
                                 <rect key="frame" x="83" y="360" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button12:" destination="2JR-iW-2xL" eventType="touchUpInside" id="YRo-h1-bix"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3X7-Gf-9A9" userLabel="Btn13">
                                 <rect key="frame" x="165" y="360" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button13:" destination="2JR-iW-2xL" eventType="touchUpInside" id="g9G-sB-gpf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80I-k0-qRg" userLabel="Btn14">
                                 <rect key="frame" x="239" y="360" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button14:" destination="2JR-iW-2xL" eventType="touchUpInside" id="dkC-5E-04S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qt-X5-fvr" userLabel="Btn15">
                                 <rect key="frame" x="312" y="360" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button15:" destination="2JR-iW-2xL" eventType="touchUpInside" id="iEp-fu-I5Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mw-IZ-tVf" userLabel="Btn16">
                                 <rect key="frame" x="18" y="438" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button16:" destination="2JR-iW-2xL" eventType="touchUpInside" id="mL9-5n-CWo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaC-8U-c6t" userLabel="Btn17">
                                 <rect key="frame" x="83" y="438" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button17:" destination="2JR-iW-2xL" eventType="touchUpInside" id="otg-Wv-O6B"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWe-5F-wI4" userLabel="Btn18">
                                 <rect key="frame" x="165" y="438" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button18:" destination="2JR-iW-2xL" eventType="touchUpInside" id="UkI-NL-MBu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fe7-vG-c21" userLabel="Btn19">
                                 <rect key="frame" x="239" y="438" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button19:" destination="2JR-iW-2xL" eventType="touchUpInside" id="Sh8-dc-Fbh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erb-oU-nFv" userLabel="Btn20">
                                 <rect key="frame" x="312" y="438" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button20:" destination="2JR-iW-2xL" eventType="touchUpInside" id="aD6-cF-2hc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cev-53-UVw" userLabel="Btn22">
                                 <rect key="frame" x="83" y="508" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button22:" destination="2JR-iW-2xL" eventType="touchUpInside" id="i8Y-84-QjY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e7-Bo-TUJ" userLabel="Btn23">
                                 <rect key="frame" x="165" y="508" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button23:" destination="2JR-iW-2xL" eventType="touchUpInside" id="cLT-Ua-gz4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03d-7b-CKf" userLabel="Btn24">
                                 <rect key="frame" x="239" y="508" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button24:" destination="2JR-iW-2xL" eventType="touchUpInside" id="FNp-Z4-T6F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jp9-pn-igQ" userLabel="Btn25">
                                 <rect key="frame" x="312" y="508" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button25:" destination="2JR-iW-2xL" eventType="touchUpInside" id="cNJ-08-nWc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehv-jN-ka6" userLabel="Btn21">
                                 <rect key="frame" x="18" y="508" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="footman.png"/>
+                                <connections>
+                                    <action selector="button21:" destination="2JR-iW-2xL" eventType="touchUpInside" id="7Ag-0C-Lm1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -413,21 +485,6 @@
                         <outlet property="Btn7" destination="IA1-Xy-QMt" id="YMJ-q7-Yol"/>
                         <outlet property="Btn8" destination="1bF-2c-2Es" id="OT6-DI-zcI"/>
                         <outlet property="Btn9" destination="eXh-JJ-DWT" id="5Et-V8-14d"/>
-                        <outlet property="Footman10Btn" destination="RHP-2U-kgV" id="qob-3l-JDk"/>
-                        <outlet property="Footman11Btn" destination="1mX-Nl-aRe" id="h5D-iW-Sbu"/>
-                        <outlet property="Footman12Btn" destination="cO9-FD-se0" id="QFB-dk-gFM"/>
-                        <outlet property="Footman13Btn" destination="3X7-Gf-9A9" id="ceh-Ye-L2T"/>
-                        <outlet property="Footman14Btn" destination="80I-k0-qRg" id="Zkv-Mb-UwV"/>
-                        <outlet property="Footman15Btn" destination="6Qt-X5-fvr" id="bd6-Ba-ug7"/>
-                        <outlet property="Footman1Btn" destination="avL-dj-2hO" id="nHs-Z9-oLX"/>
-                        <outlet property="Footman2Btn" destination="iOR-Ai-Wqz" id="yOr-fQ-khn"/>
-                        <outlet property="Footman3Btn" destination="eG6-vs-cMu" id="dmj-lY-H8u"/>
-                        <outlet property="Footman4Btn" destination="dL9-AP-2M6" id="TUu-ez-9es"/>
-                        <outlet property="Footman5Btn" destination="rfm-4b-qsC" id="aKf-Jl-MvA"/>
-                        <outlet property="Footman6Btn" destination="csn-5m-t8v" id="pHv-Ur-Ohy"/>
-                        <outlet property="Footman7Btn" destination="IA1-Xy-QMt" id="Opw-wq-4Ry"/>
-                        <outlet property="Footman8Btn" destination="1bF-2c-2Es" id="TsT-oz-7Ce"/>
-                        <outlet property="Footman9Btn" destination="eXh-JJ-DWT" id="l2y-He-Cto"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hw3-Bk-uSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
