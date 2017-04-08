@@ -22,6 +22,29 @@
 #define FootmanMaxNum       15
 #define CannonMaxNum        3
 
+typedef enum
+{
+    Turn_Cannon,
+    Turn_Footman,
+}GameTurnType;
+
+typedef enum
+{
+    CannonState_Select,
+    CannonState_Move,
+}CannonStateType;
+
+typedef enum
+{
+    FootmanState_Select,
+    FootmanState_Move,
+}FootmanStateType;
+
+typedef struct
+{
+    BYTE row;
+    BYTE line;
+}SelectChessType;
 
 @interface Cannon : NSObject
 {
@@ -31,6 +54,8 @@
 
 - (void)GameInit;
 - (void)GameTouchRow:(BYTE)row Line:(BYTE)line;
+- (GameTurnType)getGameTurn;
+- (BOOL)IsGameOver;
 
 @end
 

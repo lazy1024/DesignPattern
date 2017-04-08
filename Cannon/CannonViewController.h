@@ -35,5 +35,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *Btn24;
 @property (weak, nonatomic) IBOutlet UIButton *Btn25;
 
+@property (weak, nonatomic) IBOutlet UIButton *TipsBtn;
 
 @end

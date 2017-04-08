@@ -25,6 +25,10 @@ Cannon *cannon;
     
     cannon = [[Cannon alloc] init];
     
+    /*
+    [self.TipsBtn setImage:[UIImage imageNamed:@"cannon.png"] forState:UIControlStateNormal];
+    */
+    
     [self Update];
 }
 
@@ -53,6 +57,18 @@ Cannon *cannon;
                 
         }
     }
+    
+    // ---
+    if([cannon getGameTurn] == Turn_Cannon)
+        [self.TipsBtn setImage:[UIImage imageNamed:@"cannon.png"] forState:UIControlStateNormal];
+    else
+        [self.TipsBtn setImage:[UIImage imageNamed:@"footman.png"] forState:UIControlStateNormal];
+    
+    // ---
+    if([cannon IsGameOver])
+    {
+        NSLog(@"Game Over:Footman Win");
+    }
 }
 
 - (IBAction)Test1:(id)sender {
@@ -60,6 +76,11 @@ Cannon *cannon;
 
 - (IBAction)Test2:(id)sender {
 
+}
+
+- (void)gameOverCheck
+{
+    
 }
 
 - (IBAction)button1:(id)sender {
