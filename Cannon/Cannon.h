@@ -56,6 +56,8 @@ typedef struct
 - (void)GameTouchRow:(BYTE)row Line:(BYTE)line;
 - (GameTurnType)getGameTurn;
 - (BOOL)IsGameOver;
+- (BOOL)IsFootmanGameOver;
+- (BOOL)IsCannonGameOver;
 
 @end
 

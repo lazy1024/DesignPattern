@@ -351,16 +351,35 @@ SelectChessType selectChess = {0, 0};
     return res;
 }
 
+- (BOOL)IsFootmanGameOver
+{
+    BYTE i = 0;
+    BYTE j = 0;
+    BYTE footmanNum = 0;
+    
+    for(i=0; i<GameRow; i++)
+    {
+        for(j=0; j<GameLine; j++)
+        {
+            if(Game[i][j] == FootmanValue)
+                footmanNum++;
+        }
+    }
+    
+    if(footmanNum < 4)
+        return TRUE;
+    else
+        return FALSE;
+}
+
 - (BOOL)IsGameOver
 {
     BOOL res = FALSE;
     
     if(gameTurn == Turn_Cannon)
-    {
         res = [self IsCannonGameOver];
-    }
     else
-    {}
+        res = [self IsFootmanGameOver];
     
     return res;
 }

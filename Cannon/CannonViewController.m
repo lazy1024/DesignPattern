@@ -67,7 +67,11 @@ Cannon *cannon;
     // ---
     if([cannon IsGameOver])
     {
-        NSLog(@"Game Over:Footman Win");
+        if([cannon IsCannonGameOver])
+            NSLog(@"Game Over:Footman Win");
+        else
+            NSLog(@"Game Over:Cannon Win");
+            
     }
 }
 
